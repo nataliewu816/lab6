@@ -57,12 +57,13 @@ int main() {
     gpio_put(17, 1);
     sleep_ms(100);
 
-    // while (true) {
-    //     for (int i = 0; i < 256; i++) {
-    //         spi_send_16(17, sprite[i]);
-    //     }
-    //     sleep_ms(1000);
-    // }
+    //Exercise 2
+    while (true) {
+        for (int i = 0; i < 256; i++) {
+            spi_send_16(17, sprite[i]);
+        }
+        sleep_ms(1000);
+    }
 
     //Exercise 3
     int rotation = 0;
